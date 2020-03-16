@@ -4,7 +4,6 @@ class Genre
 attr_accessor :name
 
 def initialize(name)
-#@artists = []
 @songs = []
 @name = name
 self.save
