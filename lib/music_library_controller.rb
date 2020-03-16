@@ -4,7 +4,7 @@ require 'pry'
 
 class MusicLibraryController
 
-#include Findable
+include Findable
 #extend Findable
 
   attr_accessor :path
