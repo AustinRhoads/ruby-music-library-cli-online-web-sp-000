@@ -20,6 +20,11 @@ module Concerns
      end
     end
 
+    def sort_by_name
+    arr = self.class.all
+    name_sort(arr)
+    end
+
   end
 
 end
