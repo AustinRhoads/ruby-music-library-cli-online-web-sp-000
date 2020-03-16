@@ -21,7 +21,7 @@ module Concerns
     end
 
     def sort_by_name
-    arr = self.class.all
+    arr = self.all
     name_sort(arr)
     end
 
