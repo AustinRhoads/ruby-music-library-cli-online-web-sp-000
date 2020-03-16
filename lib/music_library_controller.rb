@@ -47,20 +47,13 @@ def call
 
 end
 
-def library
-  @library
-end
 
-#def name_sort(arr)
-#arr.sort{|a, b| a.name <=> b.name}
-#end
 
 def list_songs
 name_sort(Song.all).each_with_index {|song, index| puts "#{index + 1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"}
 end
 
 def list_artists
-#  list = Artist.all
 name_sort(Artist.all).each_with_index {|artist, index| puts "#{index + 1}. #{artist.name}"}
 end
 
