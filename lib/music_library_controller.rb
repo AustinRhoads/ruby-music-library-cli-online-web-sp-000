@@ -54,11 +54,11 @@ Song.sort_by_name.each_with_index {|song, index| puts "#{index + 1}. #{song.arti
 end
 
 def list_artists
-name_sort(Artist.all).each_with_index {|artist, index| puts "#{index + 1}. #{artist.name}"}
+Artist.sort_by_name.each_with_index {|artist, index| puts "#{index + 1}. #{artist.name}"}
 end
 
 def list_genres
-name_sort(Genre.all).each_with_index {|genre, index| puts "#{index + 1}. #{genre.name}"}
+Genre.sort_by_name.each_with_index {|genre, index| puts "#{index + 1}. #{genre.name}"}
 end
 
 def list_songs_by_artist
