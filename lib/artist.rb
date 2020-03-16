@@ -3,7 +3,7 @@ require 'pry'
 class Artist
 
 extend Concerns::Findable
-include Findable
+#include Findable
 
 @@all = []
 
