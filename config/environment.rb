@@ -25,6 +25,10 @@ module Concerns
     name_sort(arr)
     end
 
+    def name_sort(arr)
+    arr.sort{|a, b| a.name <=> b.name}
+    end
+
   end
 
 end
