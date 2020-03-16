@@ -76,11 +76,8 @@ end
 
 def play_song
 puts "Which song number would you like to play?"
-#input = gets.chomp
 num = gets.chomp.to_i - 1
 arr = []
-#list = name_sort(Song.all)
-
 name_sort(Song.all).each { |song| arr << song }
   if num >= 0 && num <= arr.length - 1
     choice = arr[num]
