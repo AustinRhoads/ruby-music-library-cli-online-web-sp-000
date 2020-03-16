@@ -80,7 +80,7 @@ puts "Which song number would you like to play?"
 num = gets.chomp.to_i - 1
 arr = []
 #list = name_sort(Song.all)
-  
+
 name_sort(Song.all).each { |song| arr << song }
 if num >= 1 && num <= arr.length
 choice = arr[num]
