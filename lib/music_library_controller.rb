@@ -82,14 +82,10 @@ arr = []
 #list = name_sort(Song.all)
 
 name_sort(Song.all).each { |song| arr << song }
-if num >= 0 && num <= arr.length - 1
-choice = arr[num]
-puts "Playing #{choice.name} by #{choice.artist.name}"
-#binding.pry
-#  if Song.all.include?(song) == true
-#    puts "Playing #{song.name} by #{song.artist.name}"
-#  end
-end
+  if num >= 0 && num <= arr.length - 1
+    choice = arr[num]
+    puts "Playing #{choice.name} by #{choice.artist.name}"
+  end
 end
 
 end
