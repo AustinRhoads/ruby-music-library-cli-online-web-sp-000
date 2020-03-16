@@ -50,7 +50,7 @@ end
 
 
 def list_songs
-name_sort(Song.all).each_with_index {|song, index| puts "#{index + 1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"}
+Song.sort_by_name.each_with_index {|song, index| puts "#{index + 1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"}
 end
 
 def list_artists
