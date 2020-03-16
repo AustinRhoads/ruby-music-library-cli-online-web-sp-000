@@ -79,8 +79,8 @@ puts "Which song number would you like to play?"
 #input = gets.chomp
 num = gets.chomp.to_i - 1
 arr = []
-list = name_sort(Song.all)
-list.each { |song| arr << song }
+#list = name_sort(Song.all)
+name_sort(Song.all).each { |song| arr << song }
 choice = arr[num]
 puts "Playing #{choice.name} by #{choice.artist.name}"
 #binding.pry
