@@ -1,5 +1,5 @@
 require 'bundler'
-require_relative '../lib/concerns/findable'
+require_relative '../lib/concerns/sortable'
 Bundler.require
 
 
