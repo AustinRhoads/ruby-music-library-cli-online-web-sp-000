@@ -75,4 +75,3 @@ end
 
 end
 
-Song.new_from_filename("Thundercat - For Love I Come - dance.mp3")
